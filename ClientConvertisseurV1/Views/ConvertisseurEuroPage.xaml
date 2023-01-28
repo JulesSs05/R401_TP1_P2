@@ -1,0 +1,55 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Page
+    x:Class="ClientConvertisseurV1.Views.ConvertisseurEuroPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClientConvertisseurV1.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel Height="Page.Height">
+        <TextBlock
+            Margin="5,5"
+            FontSize="20"
+            Foreground="Red"
+            Text="Convertisseur" />
+        <TextBlock
+            Margin="0,150"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Montant en Euro" />
+        <TextBox
+            Margin="0,190"
+            Width="200"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text=""/>
+
+        <TextBlock
+            Margin="0,240"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Devise" />
+        <ComboBox
+            Margin="0,290"
+            Width="200"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+
+        <Button
+            Margin="0,350"
+            Content="Convertir"
+            RelativePanel.AlignHorizontalCenterWithPanel="True" />
+
+        <TextBlock
+            Margin="0,400"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Montant en devise" />
+        <TextBox
+            Margin="0,450"
+            IsReadOnly="true"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Read"
+            TextAlignment="Center" />
+    </RelativePanel>
+</Page>
