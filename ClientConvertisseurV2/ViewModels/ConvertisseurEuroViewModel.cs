@@ -2,6 +2,7 @@
 using ClientConvertisseurV2.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -72,7 +73,7 @@ namespace ClientConvertisseurV2.ViewModels
             List<Devise> result = await service.GetDevisesAsync("Devise");
             if (result == null)
             {
-                
+                DisplayError("Erreur", "API non disponible !");
             }
             else
             {
@@ -81,7 +82,24 @@ namespace ClientConvertisseurV2.ViewModels
         }
         private void ActionSetConversion()
         {
-            MontantDevise = service.CalculConvertion(Montant, SelectedDevise.Taux);
+            if (SelectedDevise == null)
+            {
+                DisplayError("Erreur", "Vous devez sélectionner une devise !");
+            }
+            else
+                MontantDevise = service.CalculConvertion(Montant, SelectedDevise.Taux);
+        }
+
+        private async void DisplayError(string title, string content)
+        {
+            ContentDialog errorDialog = new ContentDialog
+            {
+                Title = title,
+                Content = content,
+                CloseButtonText = "Ok"
+            };
+            errorDialog.XamlRoot = App.MainRoot.XamlRoot;
+            ContentDialogResult result = await errorDialog.ShowAsync();
         }
     }   
 }

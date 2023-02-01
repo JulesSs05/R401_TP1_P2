@@ -110,14 +110,14 @@ namespace ClientConvertisseurV1.Views
         }
         private async void DisplayError(string title, string content)
         {
-            ContentDialog noApiDialog = new ContentDialog
+            ContentDialog errorDialog = new ContentDialog
             {
                 Title = title,
                 Content = content,
                 CloseButtonText = "Ok"
             };
-            noApiDialog.XamlRoot = this.Content.XamlRoot;
-            ContentDialogResult result = await noApiDialog.ShowAsync();
+            errorDialog.XamlRoot = this.Content.XamlRoot;
+            ContentDialogResult result = await errorDialog.ShowAsync();
         }
     }
 }
