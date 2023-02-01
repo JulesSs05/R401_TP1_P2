@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConvertisseurV1", "ClientConvertisseurV1\ClientConvertisseurV1.csproj", "{C2A1736C-1554-4F4F-830C-F9B4198F9736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientConvertisseurV1", "ClientConvertisseurV1\ClientConvertisseurV1.csproj", "{C2A1736C-1554-4F4F-830C-F9B4198F9736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConvertisseurV2", "ClientConvertisseurV2\ClientConvertisseurV2.csproj", "{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,24 @@ Global
 		{C2A1736C-1554-4F4F-830C-F9B4198F9736}.Release|x86.ActiveCfg = Release|x86
 		{C2A1736C-1554-4F4F-830C-F9B4198F9736}.Release|x86.Build.0 = Release|x86
 		{C2A1736C-1554-4F4F-830C-F9B4198F9736}.Release|x86.Deploy.0 = Release|x86
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|ARM64.Build.0 = Debug|ARM64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|x64.ActiveCfg = Debug|x64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|x64.Build.0 = Debug|x64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|x64.Deploy.0 = Debug|x64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|x86.ActiveCfg = Debug|x86
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|x86.Build.0 = Debug|x86
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Debug|x86.Deploy.0 = Debug|x86
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|ARM64.ActiveCfg = Release|ARM64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|ARM64.Build.0 = Release|ARM64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|ARM64.Deploy.0 = Release|ARM64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|x64.ActiveCfg = Release|x64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|x64.Build.0 = Release|x64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|x64.Deploy.0 = Release|x64
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|x86.ActiveCfg = Release|x86
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|x86.Build.0 = Release|x86
+		{339CA7B0-0ED2-48BE-A516-1E60BBC9ACAF}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
