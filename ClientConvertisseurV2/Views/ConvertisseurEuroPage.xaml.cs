@@ -1,6 +1,7 @@
 // Copyright (c) Microsoft Corporation and Contributors.
 // Licensed under the MIT License.
 
+using ClientConvertisseurV2.ViewModels;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -29,6 +30,9 @@ namespace ClientConvertisseurV2.Views
         public ConvertisseurEuroPage()
         {
             this.InitializeComponent();
+            ConvertisseurEuroViewModel convertisseurEuroViewModel = new ConvertisseurEuroViewModel();
+            DataContext = convertisseurEuroViewModel;
         }
+
     }
 }
