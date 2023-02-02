@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClientConvertisseurV2.Models;
+using ClientConvertisseurV2.Services;
 
 namespace ClientConvertisseurV2.ViewModels.Tests
 {
