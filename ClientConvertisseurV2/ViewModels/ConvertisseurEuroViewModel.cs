@@ -67,7 +67,7 @@ namespace ClientConvertisseurV2.ViewModels
             BtnSetConversion = new RelayCommand(ActionSetConversion);
         }
 
-        private async void GetDataOnLoadAsync()
+        public async void GetDataOnLoadAsync()
         {
             WSService service = new WSService("https://localhost:44320/api/");
             List<Devise> result = await service.GetDevisesAsync("Devise");
@@ -80,14 +80,14 @@ namespace ClientConvertisseurV2.ViewModels
                 Devises = new ObservableCollection<Devise>(result);
             }
         }
-        private void ActionSetConversion()
+        public void ActionSetConversion()
         {
             if (SelectedDevise == null)
             {
                 DisplayError("Erreur", "Vous devez sélectionner une devise !");
             }
             else
-                MontantDevise = service.CalculConvertion(Montant, SelectedDevise.Taux);
+                MontantDevise = Montant * SelectedDevise.Taux;
         }
 
         private async void DisplayError(string title, string content)

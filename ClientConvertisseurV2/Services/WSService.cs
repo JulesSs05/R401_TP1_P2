@@ -37,16 +37,5 @@ namespace ClientConvertisseurV2.Services
                 return null;
             }
         }
-
-        public double CalculConvertion(double montant, double taux)
-        {
-            try
-            {
-                return montant * taux;
-            }
-            catch (Exception) {
-                throw new ArgumentException("Impossible de convertir un montant égal à 0");
-            }
-        }
     }
 }
